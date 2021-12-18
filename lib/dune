@@ -1,0 +1,2 @@
+(library
+ (name starter_lib))

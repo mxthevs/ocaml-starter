@@ -1,0 +1,20 @@
+{
+  "name": "ocaml-starter",
+  "esy": {
+    "build": "dune build -p #{self.name}"
+  },
+  "scripts": {
+    "watch": "dune build -p #{self.name} -w"
+  },
+  "dependencies": {
+    "ocaml": "4.12.x",
+    "@opam/dune": "*"
+  },
+  "devDependencies": {
+    "@opam/merlin": "*",
+    "@opam/ocaml-lsp-server": "*",
+    "@opam/ocamlformat": "*",
+    "@opam/ocamlformat-rpc": "*",
+    "@opam/utop": "*"
+  }
+}
