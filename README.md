@@ -39,5 +39,5 @@ esy build
 Run the example binary:
 
 ```console
-esy x ocaml-starter <dividend> <divisor>
+esy x ocaml_starter <dividend> <divisor>
 ```
