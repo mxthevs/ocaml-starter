@@ -4,6 +4,8 @@
 
 Opinionated OCaml starter template. With esy and dune.
 
+Dune by default assumes that all the source code lays on the same directory as the `dune` file. If you want to have subdirs inside `lib` then you have to have a separated `dune` file for each of them. But this template comes with `(include_subdirs unqualified)` as a dune option. Which allows having others subdirs inside `lib` without having to setup them as separated libraries. If you do not want this behaviour just remove [this line](https://github.com/mxthevs/ocaml-starter/blob/main/lib/dune#L4).
+
 ## Prerequisites
 
 ### esy
