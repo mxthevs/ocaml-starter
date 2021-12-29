@@ -4,7 +4,9 @@
     "build": "dune build -p #{self.name}"
   },
   "scripts": {
-    "watch": "dune build -p #{self.name} -w"
+    "watch": "dune build -p #{self.name} -w",
+    "test": "esy dune build @test/runtest -f",
+    "test:watch": "esy dune build @test/runtest -f -w"
   },
   "dependencies": {
     "ocaml": "4.12.x",
@@ -15,6 +17,7 @@
     "@opam/ocaml-lsp-server": "*",
     "@opam/ocamlformat": "*",
     "@opam/ocamlformat-rpc": "*",
-    "@opam/utop": "*"
+    "@opam/utop": "*",
+    "@opam/alcotest": "*"
   }
 }

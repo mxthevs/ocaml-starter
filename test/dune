@@ -1,0 +1,17 @@
+(library
+ (name ocaml_starter_test)
+ (libraries alcotest starter_lib)
+ (modules
+  (:standard \ test_runner)))
+
+(executable
+ (name test_runner)
+ (libraries alcotest ocaml_starter_test)
+ (modules test_runner))
+
+(rule
+ (alias runtest)
+ (deps
+  (:m test_runner.exe))
+ (action
+  (run %{m} -q --color=always)))
