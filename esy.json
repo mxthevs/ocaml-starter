@@ -1,12 +1,14 @@
 {
   "name": "ocaml-starter",
+  "license": "MIT",
   "esy": {
     "build": "dune build -p #{self.name}"
   },
   "scripts": {
     "watch": "dune build -p #{self.name} -w",
     "test": "esy dune build @test/runtest -f",
-    "test:watch": "esy dune build @test/runtest -f -w"
+    "test:watch": "esy dune build @test/runtest -f -w",
+    "utop": "esy dune utop lib -- -implicit-bindings"
   },
   "dependencies": {
     "ocaml": "4.12.x",
