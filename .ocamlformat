@@ -6,5 +6,4 @@ align-constructors-decl=true
 type-decl=sparse
 break-cases=all
 cases-exp-indent=2
-nested-match=align
 let-and=sparse
