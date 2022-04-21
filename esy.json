@@ -12,7 +12,7 @@
     "doc": "esy dune build @doc"
   },
   "dependencies": {
-    "ocaml": "4.13.x",
+    "ocaml": "4.14.x",
     "@opam/dune": "*"
   },
   "devDependencies": {
